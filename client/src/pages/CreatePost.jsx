@@ -15,7 +15,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
   
-        const response = await fetch('http://localhost:8080/api/v1/dalle', { 
+        const response = await fetch('https://imaginate-wa7y.onrender.com/api/v1/dalle', { 
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
