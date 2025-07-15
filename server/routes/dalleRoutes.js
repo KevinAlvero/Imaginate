@@ -18,7 +18,7 @@ router.route('/').post(async (req, res) => {
     // New query function to use the updated model
     async function query(data) {
       const response = await fetch(
-        "https://api-inference.huggingface.co/models/CompVis/stable-diffusion-v1-4",
+        "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev",
         {
           headers: {
             Authorization: `Bearer ${process.env.HUGGINGFACE_API_KEY}`,
